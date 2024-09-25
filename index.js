@@ -10,7 +10,8 @@ const port = process.env.PORT || 3000;
 // Middleware
 const app = express();
 app.use(cors({
-  origin: 'http://localhost:5173', // Update with your frontend URL
+  // origin: 'http://localhost:5173', 
+  origin: 'https://task-management-system-redux.vercel.app', 
   credentials: true,
 }));
 app.use(express.json());
